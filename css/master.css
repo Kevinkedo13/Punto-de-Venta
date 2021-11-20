@@ -1,0 +1,438 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+section, div, header{
+  position: relative;
+}
+p{
+  margin: 0;
+}
+i{
+  cursor: pointer;
+}
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.color{
+  color: rgb(66,191,219);
+}
+.red{
+  color: rgb(241,67,7);
+}
+.green{
+  color: rgb(58,232,168);
+}
+.bg-red{
+  background-color: rgb(241,67,7);
+  color: white;
+}
+.bg-color{
+  background-color: rgb(66,191,219);
+  color: white;
+}
+table.table-format tr:first-child{
+    background-color: rgb(66,191,219);
+    color: white;
+}
+table.table-format tr:nth-child(even){
+  background-color: rgb(200,200,200);
+}
+#print{
+  overflow: inherit;
+}
+#print .bg-color{
+  background-color: black;
+  color: white;
+}
+.bg-green{
+  background-color: rgb(58,232,168);
+  color: white;
+}
+.bg-yellow{
+  background-color: rgb(255,255,98);
+  /* color: white; */
+}
+.left{
+  text-align: left!important;
+}
+.right{
+  text-align: right;
+}
+.center{
+  text-align: center;
+}
+.normal{
+  font-size: 1rem;
+}
+header{
+  width: 5%;
+  height: 100vh;
+}
+header .button{
+  text-align: center;
+  cursor: pointer;
+}
+header .button:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+header .button i, i.button{
+  font-size: 2rem;
+  padding: 1vw;
+  padding: 1vw 1vw 0 1vw;
+}
+
+#sell{
+  width: 95%;
+}
+#sell .patch{
+  width: 95%;
+}
+#sell .filters{
+  width: 5%;
+}
+#sell .list{
+  padding: 1vw 0;
+  width: 70%;
+  height: 100vh;
+  overflow: overlay;
+}
+#sell .list .card{
+  width: 25%;
+  display: inline-grid;
+}
+#sell .list .card .content{
+  margin: 1vw;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#sell .list .card .content .img{
+  width: 75%;
+  display: flex;
+}
+#sell .list .card .content .price{
+  width: 25%;
+  padding-top: 28%;
+  font-weight: bold;
+  text-align: center;
+}
+#sell .list .card .name{
+  text-align: center;
+}
+#sell #popup{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(50,50,50,0.5);
+  visibility: hidden;
+  z-index: 2;
+  height: 100%;
+  padding-top: 14%;
+}
+#sell #popup .content{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 8px;
+}
+#sell #popup.active{
+  visibility: inherit;
+}
+#sell .wrap .filters .priceShortcuts p{
+  text-align: center;
+  padding: 0.5vw 0;
+}
+#sell .wrap .filters .priceShortcuts p:nth-child(odd){
+  background-color: rgba(66,191,219,0.5);
+}
+#amount{
+  width: 30%;
+  height: 100vh;
+}
+#amount .actions{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#amount .actions .wrap div{
+  width: 33.3%;
+  text-align: center;
+}
+#amount #amountList{
+  height: 92%;
+  overflow: overlay;
+}
+#amount table{
+  width: 100%;
+}
+#amount table tr td{
+  padding: 1vw 0;
+}
+#amount table tr:first-child td:nth-child(1){
+  width: 13%;
+}
+#amount table tr:nth-child(even){
+  background-color: rgb(200,200,200);
+}
+#amount table tr td:last-child{
+  text-align: right;
+}
+#amount .total{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#popup, #popup input{
+  font-size: 2rem;
+}
+#popup div{
+  margin-bottom: 2.5vw;
+}
+#popup div:last-child{
+    margin-bottom: 0;
+}
+#popup input{
+  width: 50%;
+  text-align: center;
+}
+#popup input[type="submit"]{
+  width: 35%;
+  border: 0px solid white;
+  border-radius: 8px;
+}
+#popupFrame{
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-color: rgba(50,50,50,0.5);
+  text-align: center;
+}
+#popupFrame.active{
+  visibility: inherit;
+}
+
+#popupFrame iframe{
+  width: 48mm;
+  height: 90%;
+  background-color: white;
+}
+#popupFrame .closeFrame{
+  width: 48mm;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#print{
+  width: 47mm;
+  max-width: 48mm;
+  /* border: 1px solid black; */
+}
+#print .div{
+  width: 100%;
+}
+#print td{
+  font-size: 3mm;
+  font-weight: bold;
+}
+#print tr td:nth-child(4){
+  text-align: right;
+}
+#print td strong{
+  font-size: 4mm;
+}
+#print p{
+  font-size: 3.5mm;
+  margin: 2mm 0;
+}
+#printParaExistencia td{
+  border: 1px solid black;
+  border-width: 0 0 1px 0;
+}
+#agregarInventario{
+  height: 100vh;
+  overflow: auto;
+}
+#database{
+  width: 95%;
+}
+#dataBaseList{
+
+  height: 100vh;
+  overflow: overlay;
+}
+/* #database table img{
+  width: 20%;
+} */
+#database table td.img{
+  width: 20vw;
+}
+#cuenta{
+  overflow: auto;
+  height: 100vh;
+  width: 95%;
+}
+#cuenta td{
+  text-align: right;
+}
+#venta{
+  width: 95%;
+  height: 100vh;
+  overflow: auto;
+}
+#venta table{
+  max-width: 100%;
+}
+table.contrast tr:nth-child(even){
+  background-color: rgb(200,200,200);
+}
+#login{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(66,191,219,0.6);
+}
+#login .container{
+  display: table-cell;
+  vertical-align: middle;
+}
+#login form{
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5vw;
+  border-radius: 10px;
+}
+#login input{
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 1vw;
+  border: 0px solid white;
+}
+#login input[type="submit"]{
+    width: 33%;
+    margin-left: auto;
+    color: white;
+    background-color: rgba(50,50,50,0.3);
+    cursor: pointer;
+}
+/* table{
+  width: 100%;
+  max-width: 100%;
+} */
+@media print {
+  button{
+    display: none;
+  }
+  header{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  header{
+    width: 15%;
+  }
+  #sell{
+    width: 85%;
+  }
+  #sell .patch{
+    width: 88%;
+  }
+  #sell .patch2{
+    flex-direction: row-reverse;
+  }
+  #sell .filters {
+    width: 12%;
+  }
+  #sell .list{
+    width: 100%;
+    height: 50vh;
+     padding: 1vw 3vw 1vw 0;
+
+  }
+  #sell .list .card {
+      width: 50%;
+      display: inline-grid;
+  }
+  #sell .amount{
+    width: 100%;
+    height: 50vh;
+  }
+  #sell #amount #amountList{
+    overflow: scroll;
+  }
+  #sell .wrap .filters .priceShortcuts p{
+    padding: 1.5vw 0;
+  }
+  #sell #popup{
+    padding-top: 65%;
+  }
+  #sell #popup .content{
+    width: 90%;
+  }
+  #login form{
+    width: 80%;
+  }
+
+}
