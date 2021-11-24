@@ -176,12 +176,7 @@
            montosAaron[String(id)] = monto;
          }
 
-         // montosRoberto.forEach(splitMontosRoberto);
-         // function splitMontosRoberto(value, index, array) {
-         //   totalRoberto = 0;
-         //   totalRoberto += value.id;
-         //
-         // }
+
          totalRoberto = 0;
          totalAaron = 0;
         Object.entries(montosRoberto).forEach(([key, value]) => {
